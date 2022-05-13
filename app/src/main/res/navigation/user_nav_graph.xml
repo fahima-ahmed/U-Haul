@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/news_nav_graph"
+    app:startDestination="@id/userListFragment">
+
+    <fragment
+        android:id="@+id/userListFragment"
+        android:name="com.fahima.uhaul.test.ui.UserListFragment"
+        android:label="UserListFragment" >
+        <action
+            android:id="@+id/action_userListFragment_to_userPostsFragment"
+            app:destination="@id/userPostFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/userPostFragment"
+        android:name="com.fahima.uhaul.test.ui.UserPostFragment"
+        android:label="UserPostFragment" >
+        <argument
+            android:name="userId"
+            app:argType="integer" />
+    </fragment>
+
+</navigation>

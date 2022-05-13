@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">U-Haul Test</string>
+    <string name="failed_to_connect">Failed to connect</string>
+</resources>
